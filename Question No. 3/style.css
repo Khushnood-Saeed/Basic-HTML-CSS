@@ -36,14 +36,25 @@ table {
 table, th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    max-width: 100%;
+    min-width: 0%;
 }
-th {
-    background-color: #4CAF50;
-    color: white;
-}
+
+
 .agreement{
 
     display: flex;
     justify-content: center;
+}
+.center-table {
+    margin: auto;
+    max-width: 100%;
+    width: 60%;
+}
+
+@media (max-width: 600px) {
+    .center-table {
+        width: 100%;
+    }
 }
