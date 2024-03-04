@@ -384,3 +384,203 @@ div.card{
 
 @media (max-width: 1070px) {
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#top-menu-bar {
+    display: none; /* Initially hide on mobile */
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items:center ;
+   
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #979292;
+  
+}
+
+/* Media Query for Desktop View */
+@media screen and (min-width: 768px) {
+    #top-menu-bar {
+        display: block; /* Show on desktop */
+    }
+
+    .carousel-wrapper {
+        overflow: hidden;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+    }
+}
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+               max-height:40px;
+                max-width: 100px;
+        }
+
+ 
+
+        .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 8px;
+            border: 1px solid #d7dbde; /* Blue border color */
+            border-radius: 4px;
+            outline: none;
+        }
+
+
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-item {
+            position: relative;
+            padding: 10px;
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            color: #ff8c00; /* Orange color on hover */
+        }
+
+        .menu-button {
+            display: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            .search {
+                display: none;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .menu-open .menu {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Adjust the distance from the top */
+                right: 15px;
+                background-color: #ffffff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            h1{
+            font-size: 25px;
+            font-weight: 100;
+            font-family: fantasy;
+            color: rgb(235, 167, 42);
+              }
+           
+            .bodyImg{
+                display: none;
+            }
+        }
+        .searchAndOptions{
+                max-width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                border-radius: 5%;
+            }
+        .searchMag{
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            min-width: 250px;
+            height: 60px;
+            flex: 1;
+            border-radius: 25px;
+            border: 2px solid #8f928b;
+
+            
+        }    
+        .mag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            color: #d7dbde; 
+            width:10%;
+            height: 100%;
+            border: 2px solid orange;
+            border-radius: 0px 25px 25px 0px
+            
+        }
+        .searchInput{
+            display: flex;
+            width: 90%;
+            border-width: 0 ;
+            border-color: azure;
+            outline: none;
+        }
+        .pageBody{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .bodyImg{
+            max-width: 100%;
+            max-height: 500px;
+            min-width: 250px;
+            border-radius: 10%;
+            padding: 20px;
+        }
+        h1{
+            font-size: 100px;
+            font-weight: 200;
+            font-family: fantasy;
+            color: rgb(235, 167, 42);
+       }
+       .titleAndInput{
+        min-width: 280px;
+        padding: 20px;
+       }
